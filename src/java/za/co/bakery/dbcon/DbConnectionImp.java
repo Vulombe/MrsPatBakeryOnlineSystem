@@ -24,12 +24,13 @@ public class DbConnectionImp implements DbConnection{
             System.out.println("agg cannot find the driver " + ex.getMessage());
         }
         System.out.println("Driver loaded");
-        String ourURI = "jdbc:derby:C:\\myProgs\\MrsPatBakeryOnlineSystem\\Database\\BakerySystemDb";
-       String password = "secret";
-       String username = "bob";
+        String ourURI = "jdbc:derby:C:\\MrsPatBakeryOnlineSystem\\Database\\BakerySystemDbb;";
+    
+      // String password = "secret";
+     //  String username = "bob";
         try {
-           con = DriverManager.getConnection(ourURI, username, password);
-           //con = DriverManager.getConnection(ourURI);
+           //con = DriverManager.getConnection(ourURI, username, password);
+           con = DriverManager.getConnection(ourURI);
         } catch (SQLException ex) {
             System.out.println("Connection error " + ex.getMessage());
             System.exit(0);

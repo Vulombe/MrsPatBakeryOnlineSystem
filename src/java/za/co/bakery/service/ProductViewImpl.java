@@ -3,6 +3,7 @@ package za.co.bakery.service;
 
 import java.util.ArrayList;
 import za.co.bakery.dbao.ProductViewDAO;
+import za.co.bakery.dbao.ProductViewDAOImpl;
 import za.co.bakery.domain.Category;
 import za.co.bakery.domain.Product;
 
@@ -14,7 +15,7 @@ public class ProductViewImpl implements ProductViewService{
     private ProductViewDAO productDao;
 
     public ProductViewImpl() {
-        this.productDao = new ProductDAOImpl();
+        this.productDao = new ProductViewDAOImpl();
     }
     
     
