@@ -22,6 +22,7 @@ public class ProductViewImpl implements ProductViewService{
 
     @Override
     public ArrayList<Product> getProduct(Category choice) {
-        return productDao.
+        return productDao;
     }
 }
+
