@@ -14,6 +14,19 @@ public class Product {
     private int productID;
     private String name;
 
+    public Product(String picture, double price, Category category, String warning, String description, Recipe recipe, int productID, String name) {
+        this.picture = picture;
+        this.price = price;
+        this.category = category;
+        this.warning = warning;
+        this.description = description;
+        this.recipe = recipe;
+        this.productID = productID;
+        this.name = name;
+    }
+
+   
+    
     public String getName() {
         return name;
     }
