@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
-    Created on : 14 Jan 2022, 12:52:04 PM
-    Author     : Studio13
+    Created on : Jan 14, 2022, 11:46:56 AM
+    Author     : student11
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -41,11 +41,11 @@
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
-                <h1>Login</h1>
-        >
+                <h1> Login </h1>
+        
                 <input type="email" name="loginEmail" placeholder="Email">
                 <input type="Password" name="loginPassword" placeholder="Password">
-                <button>Login</button>
+                <button> Login </button>
             </form>
         </div>
         <div class="overlay-container">
