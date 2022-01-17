@@ -33,7 +33,8 @@ public class ProductViewDAOImpl implements ProductViewDAO{
                         (Category) rs.getObject("category"),
                         rs.getString("warning"),
                         rs.getString("description"),
-                        rs.getInt("recipe")));
+                        rs.getInt("recipe"),
+                        rs.getInt("quantity")));
             }
         } catch (SQLException ex) {
             System.out.println("Error: " + ex.getMessage());

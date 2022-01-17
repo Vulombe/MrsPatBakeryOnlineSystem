@@ -13,8 +13,9 @@ public class Product {
     private int recipeID;
     private int productID;
     private String name;
+    private int Quantity;
 
-    public Product( int productID, String name, String picture, double price, Category category, String warning, String description, int recipeID) {
+    public Product( int productID, String name, String picture, double price, Category category, String warning, String description, int recipeID, int qty) {
         this.picture = picture;
         this.price = price;
         this.category = category;
@@ -23,6 +24,23 @@ public class Product {
         this.recipeID = recipeID;
         this.productID = productID;
         this.name = name;
+        this.Quantity = qty;
+    }
+
+    public int getRecipeID() {
+        return recipeID;
+    }
+
+    public void setRecipeID(int recipeID) {
+        this.recipeID = recipeID;
+    }
+
+    public int getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(int Quantity) {
+        this.Quantity = Quantity;
     }
 
    
