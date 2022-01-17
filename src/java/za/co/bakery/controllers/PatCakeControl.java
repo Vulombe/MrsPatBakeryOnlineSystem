@@ -36,6 +36,12 @@ public class PatCakeControl extends HttpServlet {
             if (prs.equals("register"))
             {
                 UserRegistrationService userReg = new UserRegistrationServiceImpl();
+               //userReg.registerUser(prs, prs, prs, prs, prs);
+               String title = request.getParameter("title");
+               String lname = request.getParameter("lastName");
+               String fname = request.getParameter("firstName");
+               String email = request.getParameter("email");
+               String password = request.getParameter("password");
             }
 //        
 //        response.setContentType("text/html;charset=UTF-8");
