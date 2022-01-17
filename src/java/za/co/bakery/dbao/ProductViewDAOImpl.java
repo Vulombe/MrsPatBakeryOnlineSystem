@@ -29,8 +29,8 @@ public class ProductViewDAOImpl implements ProductViewDAO{
                 choices.add(new Product(rs.getInt("ProductID"),
                         rs.getString("name"),
                         rs.getString("picture"),
-                        rs.getDouble("price"),
-                        rs.getString("category"),
+                        rs.getDouble("price"), 
+                        (Category) rs.getObject("category"),
                         rs.getString("warning"),
                         rs.getString("description"),
                         rs.getInt("recipe")));

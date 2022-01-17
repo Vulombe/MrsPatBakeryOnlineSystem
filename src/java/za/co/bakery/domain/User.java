@@ -23,6 +23,17 @@ public class User
         this.password = password;
         this.userRole = userRole;
     }
+
+    public User(int ID, String title, String firstName, String lastName, String emailAddress, String contactNumber, String password, Role userRole) {
+        this.ID = ID;
+        this.title = title;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.emailAddress = emailAddress;
+        this.contactNumber = contactNumber;
+        this.password = password;
+        this.userRole = userRole;
+    }
      
     public User() {
     }

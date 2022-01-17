@@ -18,8 +18,19 @@ public class ProductAddDAOImpl implements ProductAddDAO{
            boolean isAdded = false;
             PreparedStatement statement;
        try {
-          statement = connect.prepareStatement("INSERT INTO *** VALUES(name,picture,price,category,warning,description,recipie)");
+          statement = connect.prepareStatement("INSERT INTO *** VALUES(?,?,?,?,?,?,?)");
             
+            statement.setString(1, name);
+            statement.setString(2, picture);
+            statement.setDouble(3, price);
+            statement.setObject(4, category);
+            statement.setString(5, warning);
+            statement.setString(6, description);
+            statement.setInt(7, recipeID);
+            
+            int count = statement.executeUpdate();
+            
+            isAdded = (count>0);
             
 
         } catch (SQLException ex) {
