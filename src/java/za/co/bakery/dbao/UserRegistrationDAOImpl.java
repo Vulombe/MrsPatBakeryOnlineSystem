@@ -25,9 +25,9 @@ public class UserRegistrationDAOImpl implements UserRegistrationDAO{
             statement.setInt(1, 1+1);
             statement.setString(2, lastName);
             statement.setString(3, firstName);
-            statement.setString(3, title);
-            statement.setString(4, email);
-            statement.setString(5, password);
+            statement.setString(4, title);
+            statement.setString(5, email);
+            statement.setString(6, password);
 
         } catch (SQLException ex) {
             System.out.println("Error: " + ex.getMessage());

@@ -28,7 +28,15 @@ public class PatCakeControl extends HttpServlet {
         if (prs != null) {
             if (prs.equals("login")) {
                 UserService us = new UserServiceImpl();
-                Boolean valid = us.isUserValid("flib@flob", "password");
+                String email = request.getParameter("email");
+                String password = request.getParameter("password");
+                Boolean valid = us.isUserValid(email, password);
+                if(valid){
+                    request.setAttribute("valid", valid);
+                }else
+                {
+                    request.setAttribute("in   valid", valid);
+                }
                 request.setAttribute("valid", valid);
                 RequestDispatcher view = request.getRequestDispatcher("loginAnswer.jsp");
                 view.forward(request, response);
@@ -42,6 +50,7 @@ public class PatCakeControl extends HttpServlet {
                String fname = request.getParameter("firstName");
                String email = request.getParameter("email");
                String password = request.getParameter("password");
+               userReg.registerUser(title, lname, fname, email, password);
             }
 //        
 //        response.setContentType("text/html;charset=UTF-8");
