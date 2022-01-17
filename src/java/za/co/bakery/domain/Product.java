@@ -10,17 +10,17 @@ public class Product {
     private Category category;
     private String warning;
     private String description;
-    private Recipe recipe;
+    private int recipeID;
     private int productID;
     private String name;
 
-    public Product(String picture, double price, Category category, String warning, String description, Recipe recipe, int productID, String name) {
+    public Product( int productID, String name, String picture, double price, Category category, String warning, String description, int recipeID) {
         this.picture = picture;
         this.price = price;
         this.category = category;
         this.warning = warning;
         this.description = description;
-        this.recipe = recipe;
+        this.recipeID = recipeID;
         this.productID = productID;
         this.name = name;
     }
@@ -77,12 +77,12 @@ public class Product {
         this.description = description;
     }
 
-    public Recipe getRecipe() {
-        return recipe;
+    public int getRecipe() {
+        return recipeID;
     }
 
-    public void setRecipe(Recipe recipe) {
-        this.recipe = recipe;
+    public void setRecipe(int recipe) {
+        this.recipeID = recipe;
     }
 
     public int getProductID() {

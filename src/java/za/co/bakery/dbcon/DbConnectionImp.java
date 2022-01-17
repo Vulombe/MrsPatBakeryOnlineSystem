@@ -25,7 +25,7 @@ public class DbConnectionImp implements DbConnection{
             System.out.println("agg cannot find the driver " + ex.getMessage());
         }
         System.out.println("Driver loaded");
-        String ourURI = "jdbc:derby:C:\\MrsPatBakeryOnlineSystem\\Database\\BakerySystemDbb;";
+        String ourURI = "jdbc:derby:D:\\ClassGroupProject\\MrsPatBakeryOnlineSystem\\Database\\BakerySystemDbb;";
     
       // String password = "secret";
      //  String username = "bob";
