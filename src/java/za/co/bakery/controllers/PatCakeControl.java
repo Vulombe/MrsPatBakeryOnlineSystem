@@ -35,9 +35,9 @@ public class PatCakeControl extends HttpServlet {
                     request.setAttribute("valid", valid);
                 }else
                 {
-                    request.setAttribute("in   valid", valid);
+                    request.setAttribute("invalid", valid);
                 }
-                request.setAttribute("valid", valid);
+                
                 RequestDispatcher view = request.getRequestDispatcher("loginAnswer.jsp");
                 view.forward(request, response);
             }
