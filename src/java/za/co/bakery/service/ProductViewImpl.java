@@ -2,7 +2,6 @@
 package za.co.bakery.service;
 
 import java.util.ArrayList;
-import java.util.List;
 import za.co.bakery.dbao.ProductViewDAO;
 import za.co.bakery.dbao.ProductViewDAOImpl;
 import za.co.bakery.domain.Category;
@@ -22,8 +21,8 @@ public class ProductViewImpl implements ProductViewService{
     
 
     @Override
-    public List<Product> getProduct(Category choice) {
-        return productDao.getProduct(choice);
+    public ArrayList<Product> getProduct(Category choice) {
+        return null;
     }
 }
 

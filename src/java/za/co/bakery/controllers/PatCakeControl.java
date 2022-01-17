@@ -8,6 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import za.co.bakery.service.UserRegistrationService;
+import za.co.bakery.service.UserRegistrationServiceImpl;
 
 public class PatCakeControl extends HttpServlet {
 
@@ -30,6 +32,10 @@ public class PatCakeControl extends HttpServlet {
                 request.setAttribute("valid", valid);
                 RequestDispatcher view = request.getRequestDispatcher("loginAnswer.jsp");
                 view.forward(request, response);
+            }
+            if (prs.equals("register"))
+            {
+                UserRegistrationService userReg = new UserRegistrationServiceImpl();
             }
 //        
 //        response.setContentType("text/html;charset=UTF-8");
